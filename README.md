@@ -95,6 +95,13 @@ Thanks for your interest! To contribute:
 2. Make changes and add tests where applicable
 3. Open a pull request describing the change
 
+## Future Improvements
+
+1. We can add shadow effect to the pictures
+2. We can also add animation in testimonials
+3. About page can be made as path animation showing impotant events with pictures and anecdotes
+4. Case Study page can be designed with contrast colour gradients
+
 ---
 
 ## 📄 License
