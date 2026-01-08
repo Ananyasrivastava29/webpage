@@ -1,3 +1,8 @@
+<img width="1891" height="874" alt="Screenshot 2026-01-08 232621" src="https://github.com/user-attachments/assets/a3a18de9-5b94-4e9d-b326-3c4e07e420d1" />
+<img width="1885" height="871" alt="Screenshot 2026-01-08 232602" src="https://github.com/user-attachments/assets/0f768969-a59f-48e7-a06e-5b13efa11029" />
+<img width="1884" height="822" alt="Screenshot 2026-01-08 232540" src="https://github.com/user-attachments/assets/250c43ad-db29-41be-ba0e-e24cce0cdb3b" />
+<img width="1892" height="877" alt="Screenshot 2026-01-08 232518" src="https://github.com/user-attachments/assets/8fe6ec9c-b812-4f89-acbe-188dc244f69b" />
+<img width="1894" height="883" alt="Screenshot 2026-01-08 232502" src="https://github.com/user-attachments/assets/a07bb306-d0aa-4b5e-8b27-fa6222e55433" />
 # Ryze — Redesign ⚡️
 
 A modern, responsive marketing website built with React and Vite. This repository contains a redesign of the Ryze landing site with reusable components, page routing, and simple CSS-based styling.
