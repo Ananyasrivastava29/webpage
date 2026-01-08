@@ -1,31 +1,49 @@
 import heroImage from "../assets/hero-image.png"
 import Features from "../components/Features"
+import Testimonials from "../components/Testimonials"
+import Pricing from "../components/Pricing"
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section style={styles.hero}>
-        <div>
-          <h1>
-            Let <span style={{ color: "#2de2c5" }}>AI</span> Run Your Ads
-          </h1>
-          <p>Automated optimization, smarter creatives, better ROAS.</p>
+      <motion.section
+        className="hero-section"
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <div className="container">
+          {/* LEFT */}
+          <div className="hero-content">
+            <h1>
+              Let <span>AI</span> Run Your Ads
+            </h1>
+            <p>
+              Automated optimization, smarter creatives, better ROAS.
+            </p>
 
-          <div style={styles.buttons}>
-            <button style={styles.primary}>Get Started</button>
-            <button style={styles.secondary}>Book a Demo</button>
+            <div className="hero-buttons">
+              <button className="btn-primary">Get Started</button>
+              <button className="btn-outline">Book a Demo</button>
+            </div>
+          </div>
+
+          {/* RIGHT */}
+          <div className="hero-image">
+            <img src={heroImage} alt="AI Ads" />
           </div>
         </div>
+      </motion.section>
 
-        <img src={heroImage} alt="AI Ads" style={styles.image} />
-      </section>
-
-      {/* FEATURES */}
       <Features />
+      <Testimonials />
+      <Pricing />
     </>
   )
 }
+
 
 const styles = {
   hero: {
@@ -61,3 +79,5 @@ const styles = {
     color: "#2de2c5"
   }
 }
+
+
