@@ -3,13 +3,12 @@ import { Link } from "react-router-dom"
 export default function Header() {
   return (
     <header style={styles.header}>
-      <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-  <h2 style={{ cursor: "pointer" }}>Ryze</h2>
-</Link>
+      <Link to="/" style={styles.logo}>Ryze</Link>
+
       <nav style={styles.nav}>
         <Link to="/case-studies">Case Studies</Link>
         <Link to="/about">About</Link>
-        <button style={styles.button}>Get Started</button>
+        <button style={styles.cta}>Get Started</button>
       </nav>
     </header>
   )
@@ -19,19 +18,32 @@ const styles = {
   header: {
     display: "flex",
     justifyContent: "space-between",
-    padding: "20px 60px",
-    alignItems: "center"
+    alignItems: "center",
+    padding: "24px 80px",
+    position: "absolute",
+    top: 0,
+    width: "100%",
+    zIndex: 10
+  },
+  logo: {
+    fontSize: "24px",
+    fontWeight: "700",
+    color: "white",
+    textDecoration: "none"
   },
   nav: {
     display: "flex",
-    gap: "30px",
-    alignItems: "center"
+    gap: "24px",
+    alignItems: "center",
+    color: "white"
   },
-  button: {
-    background: "linear-gradient(135deg, #ff6a00, #ff8f3f)",
-    color: "#fff",
-    padding: "10px 20px",
+  cta: {
+    background: "#ff8a1f",
+    border: "none",
+    padding: "10px 18px",
     borderRadius: "8px",
-    fontWeight: "600"
+    color: "white",
+    fontWeight: "600",
+    cursor: "pointer"
   }
 }

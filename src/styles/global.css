@@ -40,4 +40,17 @@ section {
     padding: 20px !important;
   }
 }
+@media (max-width: 900px) {
+  section {
+    grid-template-columns: 1fr !important;
+    padding: 60px 30px !important;
+    text-align: center;
+  }
+
+  img {
+    max-width: 380px !important;
+    margin-top: 40px;
+  }
+}
+
 

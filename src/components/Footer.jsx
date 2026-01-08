@@ -1,15 +1,16 @@
 export default function Footer() {
   return (
     <footer style={styles.footer}>
-      <p>© 2026 Ryze. All rights reserved.</p>
+      © 2026 Ryze. All rights reserved.
     </footer>
   )
 }
 
 const styles = {
   footer: {
-    padding: "40px",
     textAlign: "center",
-    opacity: 0.7
+    padding: "40px",
+    color: "#9aa6ac",
+    background: "transparent"
   }
 }
