@@ -1,21 +1,21 @@
-import { motion } from "framer-motion";
-import styles from "./Testimonials.module.css";
+import t1 from "../assets/testimonials/testimonial1.png";
+import t2 from "../assets/testimonials/testimonial2.png";
+import t3 from "../assets/testimonials/testimonial3.png";
 
 export default function Testimonials() {
+  const testimonialImages = [t1, t2, t3];
+
   return (
-    <section className={styles.wrapper}>
-      <h2>What teams say about Ryze</h2>
-
-      <div className={styles.grid}>
-        <motion.div className={styles.card} whileHover={{ scale: 1.03 }}>
-          “Ryze helped us scale ads without increasing spend.”
-          <span>– Growth Lead, SaaS</span>
-        </motion.div>
-
-        <motion.div className={styles.card} whileHover={{ scale: 1.03 }}>
-          “Creative testing became automatic and measurable.”
-          <span>– Performance Marketer</span>
-        </motion.div>
+    <section className="testimonials">
+      <div className="container testimonial-grid">
+        {testimonialImages.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt="Customer testimonial"
+            className="testimonial-img"
+          />
+        ))}
       </div>
     </section>
   );
