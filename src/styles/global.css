@@ -210,4 +210,82 @@ header nav a.active {
     grid-template-columns: 1fr;
   }
 }
+/* ===============================
+   RESPONSIVE FIXES
+================================ */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero-section .container {
+    gap: 48px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  header {
+    height: 70px;
+  }
+
+  .hero-section {
+    padding-top: 100px;
+  }
+
+  .hero-section .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    justify-content: center;
+    margin-top: 2.5rem;
+  }
+
+  .hero-image img {
+    max-width: 90%;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
