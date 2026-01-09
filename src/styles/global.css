@@ -286,6 +286,21 @@ header nav a.active {
   .feature-grid {
     grid-template-columns: 1fr;
   }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  header {
+    position: relative;
+  }
+}
+
+/* Extra Large Screens */
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 2rem;
+  }
 }
 
 

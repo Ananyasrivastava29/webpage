@@ -27,14 +27,14 @@ export default function Features() {
 const styles = {
   section: {
     display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    gap: "24px",
-    padding: "80px",
-    marginTop: "40px"
+    gridTemplateColumns: "repeat(auto-fit, minmax(clamp(200px, 100%, 280px), 1fr))",
+    gap: "clamp(16px, 3vw, 24px)",
+    padding: "clamp(40px, 8vw, 80px)",
+    marginTop: "clamp(24px, 5vw, 40px)"
   },
   card: {
     background: "rgba(255,255,255,0.06)",
-    padding: "24px",
+    padding: "clamp(16px, 3vw, 24px)",
     borderRadius: "16px",
     color: "white"
   }
