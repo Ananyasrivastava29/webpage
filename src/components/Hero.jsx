@@ -20,8 +20,8 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    padding: "0 80px",
-    gap: "25px"
+    padding: "clamp(20px, 5vw, 80px)",
+    gap: "clamp(16px, 4vw, 25px)"
   },
   gradient: {
     background: "linear-gradient(135deg, #1fb6ff, #2ee59d)",
@@ -30,20 +30,27 @@ const styles = {
   },
   buttons: {
     display: "flex",
-    gap: "20px"
+    gap: "clamp(12px, 3vw, 20px)",
+    flexWrap: "wrap"
   },
   primary: {
     background: "linear-gradient(135deg, #ff6a00, #ff8f3f)",
-    padding: "14px 28px",
+    padding: "clamp(10px, 2vw, 14px) clamp(20px, 4vw, 28px)",
     borderRadius: "10px",
     color: "#fff",
-    fontWeight: "600"
+    fontWeight: "600",
+    fontSize: "clamp(12px, 2.5vw, 16px)",
+    border: "none",
+    cursor: "pointer"
   },
   secondary: {
     background: "transparent",
     border: "1px solid #2ee59d",
-    padding: "14px 28px",
+    padding: "clamp(10px, 2vw, 14px) clamp(20px, 4vw, 28px)",
     borderRadius: "10px",
-    color: "#2ee59d"
+    color: "#2ee59d",
+    fontSize: "clamp(12px, 2.5vw, 16px)",
+    fontWeight: "600",
+    cursor: "pointer"
   }
 }
